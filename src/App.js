@@ -8,6 +8,7 @@ function App() {
   useEffect(() => {
     fetch('/time').then(response => response.json())
       .then(data => {
+        // Setting Time received from API
       setTime(data.time);
     })
   }, []);
